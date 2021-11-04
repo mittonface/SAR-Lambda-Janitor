@@ -19,7 +19,7 @@ To guard against deleting live versions, some safeguards are in place:
 
 ## Deploying to your account (via the console)
 
-Go to this [page](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:374852340823:applications~lambda-janitor) and click the `Deploy` button.
+Go to this [page](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:141216917243:applications~lambda-janitor) and click the `Deploy` button.
 
 This app would deploy the following resources to your region:
 
@@ -35,7 +35,7 @@ AutoDeployMyAwesomeLambdaLayer:
   Type: AWS::Serverless::Application
   Properties:
     Location:
-      ApplicationId: arn:aws:serverlessrepo:us-east-1:374852340823:applications/lambda-janitor
+      ApplicationId: arn:aws:serverlessrepo:us-east-1:141216917243:applications/lambda-janitor
       SemanticVersion: <enter latest version>
     Parameters:
       VersionsToKeep: <defaults to 3>

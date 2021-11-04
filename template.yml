@@ -10,16 +10,16 @@ Metadata:
     LicenseUrl: LICENSE.txt
     ReadmeUrl: README.md
     Labels: ['lambda', 'cron']
-    HomePageUrl: https://github.com/lumigo/SAR-Lambda-Janitor
+    HomePageUrl: https://github.com/mittonface/SAR-Lambda-Janitor
     SemanticVersion: 1.5.0
-    SourceCodeUrl: https://github.com/lumigo/SAR-Lambda-Janitor
+    SourceCodeUrl: https://github.com/mittonface/SAR-Lambda-Janitor
 
 Resources:
   Clean:
     Type: AWS::Serverless::Function
     Properties:
       Handler: functions/clean.handler
-      Runtime: nodejs10.x
+      Runtime: nodejs14.x
       Timeout: 900
       Environment:
         Variables:
